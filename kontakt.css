@@ -1,0 +1,160 @@
+.mainContainer {
+    display: flex;
+    background-size: cover;
+    background-image: url('/Aplikacija/frontend/resources/Kontakt.png');
+    width: auto;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    column-gap: 20px;
+    flex-direction: row;
+    flex: 0 1 auto;
+}
+
+.polja {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    flex: 0 1 auto;
+    width: 100%;
+}
+
+.btnPosalji {
+    background: #1A1A1A;
+    border-radius: 8px;
+    color: #EDEDED;
+    font: bold;
+    font-size: large;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 10%;
+    padding: 10px;
+}
+
+#ImeKontakt {
+    background: #EDEDED;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-size: large;
+    font-weight: 400;
+}
+
+#PrezimeKontakt {
+    background: #EDEDED;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: large;
+    font-weight: 400;
+}
+
+#mailKontakt {
+    background: #EDEDED;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-size: large;
+    font-weight: 400;
+    padding-left: 235px;
+}
+
+#porukaKontakt {
+    background: #EDEDED;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-size: large;
+    font-weight: 400;
+    padding-left: 235px;
+    padding-bottom: 190px;
+}
+
+.NaslovKontakt {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: xx-large;
+    line-height: 132.5%;
+    color: #000000;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+input {
+    width: 200px;
+    margin: 10px;
+    border: none;
+    min-width: 10px;
+    background: #dad8d8;
+    border-radius: 8px;
+    font-size: large;
+    height: 30px;
+}
+
+::-webkit-input-placeholder {
+    text-align: left;
+}
+
+::placeholder {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    html,
+    body {
+        min-width: 300px;
+    }
+    .mainContainer {
+        background: none;
+        justify-content: center;
+        font-size: smaller;
+    }
+    input {
+        width: 280px;
+        margin: 5px;
+        font-size: smaller;
+        min-width: 50px;
+    }
+    .polja {
+        min-width: 280px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex: 0 1 340px;
+    }
+    .FullName,
+    .other {
+        display: flex;
+        flex-direction: column;
+    }
+    .otherBTN {
+        margin-left: 3%;
+    }
+    #ImeKontakt {
+        font-size: small;
+    }
+    .btnPosalji {
+        font-size: small;
+        flex: 0 1 10px;
+        margin-bottom: 30px;
+    }
+    #mailKontakt {
+        padding-left: 0;
+        font-size: small;
+    }
+    #porukaKontakt {
+        padding-left: 0;
+        font-size: small;
+    }
+    #PrezimeKontakt {
+        margin-left: 5%;
+        font-size: small;
+    }
+     ::placeholder {
+        top: 8px;
+    }
+}

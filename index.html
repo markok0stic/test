@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="headerfooter.css">
-    <link rel="stylesheet" href="prijava.css">
+    <link rel="stylesheet" href="/Aplikacija/frontend/styles/headerfooter.css">
+    <link rel="stylesheet" href="/Aplikacija/frontend/styles/kontakt.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SC Active</title>
     <link rel="icon" href="/Aplikacija/frontend/resources/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
@@ -66,23 +68,27 @@
     </header>
 
 
-    <div class="mainContainer ">
-        <img class="slika" src="/Aplikacija/frontend/resources/prijSlika1.png">
 
-        <div class="forma">
-            <h1 class="textMob">Prijavi se</h1>
-            <div class="divGoogle">
-                <button class="btnGoogle"><img class="imgGlg"src="/Aplikacija/frontend/resources/flat-color-icons_google.png">Prijavi se preko Googla</button>
+
+    <div class="mainContainer ">
+
+        <div class="polja">
+            <div class="NaslovKontakt">Kontakt</div>
+            <div class="FullName">
+                <input type="text" placeholder="Ime" id="ImeKontakt">
+                <input type="text" placeholder="Prezime" id="PrezimeKontakt">
             </div>
-            <div class="solid">ILI</div>
-            <div class="form">
-                <input type="text" placeholder="Email" id="poljeEmail">
-                <input type="password" placeholder="Šifra" id="poljeSifra">
+            <div>
+                <input type="text" placeholder="Email" id="mailKontakt">
             </div>
-            <div class="divRegistracija">
-                <button class="btnRegistracija">Prijavi se</button>
+            <div>
+                <input type="text" placeholder="Vaša poruka" id="porukaKontakt">
+            </div>
+            <div>
+                <button class="btnPosalji">Pošalji</button>
             </div>
         </div>
+
     </div>
 
 

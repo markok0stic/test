@@ -108,6 +108,9 @@ input {
     body {
         min-width: 300px;
     }
+    .site{
+        overflow-x:hidden;
+    }
     .mainContainer {
         background: none;
         justify-content: center;
